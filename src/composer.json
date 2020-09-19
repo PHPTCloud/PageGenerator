@@ -1,0 +1,21 @@
+{
+    "name": "phptcloud/pagegenerator",
+    "repositories": [
+        {
+            "type": "git",
+            "url": "https://github.com/PHPTCloud/PageGenerator.git"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "uzone\\Client\\": "src/",
+            "uzone\\Models\\": "src/Models/",
+            "uzone\\Models\\BaseModels\\": "src/Models/BaseModels/",
+            "uzone\\Colllections\\": "src/Collections/",
+            "uzone\\Colllections\\BaseCollections\\": "src/Collections/BaseCollections/",
+            "uzone\\Exceptions\\": "src/Exceptions/",
+            "uzone\\Components\\": "src/Components/",
+            "uzone\\Factories\\": "src/Factories/"
+        }
+    }
+  }
