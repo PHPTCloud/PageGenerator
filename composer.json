@@ -1,21 +1,21 @@
 {
-  "name": "phptcloud/pagegenerator",
-  "repositories": [
-      {
-          "type": "git",
-          "url": "https://github.com/PHPTCloud/PageGenerator.git"
-      }
-  ],
-  "autoload": {
-      "psr-4": {
-          "uzone\\Client\\": "pagegenerator/",
-          "uzone\\Models\\": "pagegenerator/Models",
-          "uzone\\Models\\BaseModels\\": "pagegenerator/Models/BaseModels",
-          "uzone\\Colllections\\": "pagegenerator/Collections",
-          "uzone\\Colllections\\BaseCollections\\": "pagegenerator/Collections/BaseCollections",
-          "uzone\\Exceptions\\": "pagegenerator/Exceptions",
-          "uzone\\Components\\": "pagegenerator/Components",
-          "uzone\\Factories\\": "pagegenerator/Factories"
-      }
+    "name": "phptcloud/pagegenerator",
+    "repositories": [
+        {
+            "type": "git",
+            "url": "https://github.com/PHPTCloud/PageGenerator.git"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "uzone\\Client\\": "",
+            "uzone\\Models\\": "Models",
+            "uzone\\Models\\BaseModels\\": "Models/BaseModels",
+            "uzone\\Colllections\\": "Collections",
+            "uzone\\Colllections\\BaseCollections\\": "Collections/BaseCollections",
+            "uzone\\Exceptions\\": "Exceptions",
+            "uzone\\Components\\": "Components",
+            "uzone\\Factories\\": "Factories"
+        }
+    }
   }
-}
