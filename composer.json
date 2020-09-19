@@ -8,7 +8,11 @@
   ],
   "autoload": {
       "psr-4": {
-          "uzone\\Client": "/"
+          "uzone\\Client": "/",
+          "uzone\\Models": "Models",
+          "uzone\\Models\\BaseModels": "Models/BaseModels",
+          "uzone\\Colllections": "Collections",
+          "uzone\\Colllections\\BaseCollections": "Collections/BaseCollections"
       }
   }
 }
