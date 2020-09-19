@@ -12,7 +12,10 @@
           "uzone\\Models\\": "pagegenerator/Models",
           "uzone\\Models\\BaseModels\\": "pagegenerator/Models/BaseModels",
           "uzone\\Colllections\\": "pagegenerator/Collections",
-          "uzone\\Colllections\\BaseCollections\\": "pagegenerator/Collections/BaseCollections"
+          "uzone\\Colllections\\BaseCollections\\": "pagegenerator/Collections/BaseCollections",
+          "uzone\\Exceptions\\": "pagegenerator/Exceptions",
+          "uzone\\Components\\": "pagegenerator/Components",
+          "uzone\\Factories\\": "pagegenerator/Factories"
       }
   }
 }
