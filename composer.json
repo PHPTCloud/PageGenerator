@@ -8,14 +8,14 @@
     ],
     "autoload": {
         "psr-4": {
-            "uzone\\Client\\": "",
-            "uzone\\Models\\": "Models",
-            "uzone\\Models\\BaseModels\\": "Models/BaseModels",
-            "uzone\\Colllections\\": "Collections",
-            "uzone\\Colllections\\BaseCollections\\": "Collections/BaseCollections",
-            "uzone\\Exceptions\\": "Exceptions",
-            "uzone\\Components\\": "Components",
-            "uzone\\Factories\\": "Factories"
+            "uzone\\Client\\": "/",
+            "uzone\\Models\\": "Models/",
+            "uzone\\Models\\BaseModels\\": "Models/BaseModels/",
+            "uzone\\Colllections\\": "Collections/",
+            "uzone\\Colllections\\BaseCollections\\": "Collections/BaseCollections/",
+            "uzone\\Exceptions\\": "Exceptions/",
+            "uzone\\Components\\": "Components/",
+            "uzone\\Factories\\": "Factories/"
         }
     }
   }
