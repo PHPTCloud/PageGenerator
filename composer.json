@@ -1,0 +1,14 @@
+{
+  "name": "phptcloud/pagegenerator",
+  "repositories": [
+      {
+          "type": "git",
+          "url": "https://github.com/PHPTCloud/PageGenerator.git"
+      }
+  ],
+  "autoload": {
+      "psr-4": {
+          "uzone\\Client": "/"
+      }
+  }
+}
