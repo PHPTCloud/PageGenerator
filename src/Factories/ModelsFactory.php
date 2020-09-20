@@ -5,6 +5,7 @@ namespace uzone\Factories;
 use uzone\Exceptions\NotFoundModelException;
 use uzone\Models\BaseModels\BaseModel;
 use uzone\Models\NavigationItem;
+use uzone\Models\Icon;
 
 
 class ModelsFactory
@@ -22,6 +23,10 @@ class ModelsFactory
 
       case 'NavigationItem':
         return new NavigationItem();
+        break;
+
+      case 'Icon':
+        return new Icon();
         break;
         
       default:
