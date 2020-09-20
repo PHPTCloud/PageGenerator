@@ -21,6 +21,7 @@ class BaseCollection
   public function __construct(?array $items = [])
   {
     $this->_items = $items;
+    return $this;
   }
 
   /**
@@ -123,5 +124,7 @@ class BaseCollection
         (ModelsFactory::make($this->_MODEL))->fromArray($model)
       );
     }
+
+    return $this;
   }
 }

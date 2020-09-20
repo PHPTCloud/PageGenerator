@@ -2,24 +2,34 @@
 
 namespace uzone\Components;
 
+use uzone\Collections\NavigationItems;
+
 class Navigation
 {
   /**
-   * @var array
+   * @var NavigationItems
    */
   protected $_items;
 
-
-  public function __construct(?array $items = [])
+  /**
+   * @param NavigationItems $items
+   */
+  public function __construct($items = [])
   {
     $this->_items = $items;
+    return $this;
   }
 
   /**
-   * @return array
+   * @return NavigationItems
    */
-  public function items(): array
+  public function items()
   {
     return $this->_items;
+  }
+
+  public function setItems($items)
+  {
+    $this->_items = $items;
   }
 }
