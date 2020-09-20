@@ -4,6 +4,7 @@ namespace uzone\Models;
 
 use uzone\Models\BaseModels\BaseModel;
 use uzone\Models\Icon;
+use uzone\Collections\NavigationItems;
 
 
 class NavigationItem extends BaseModel
@@ -94,7 +95,7 @@ class NavigationItem extends BaseModel
    * @param NavigationItems $childs
    * @return this
    */
-  public function setChilds(?NavigationItems $childs): NavigationItems
+  public function setChilds(?NavigationItems $childs)
   {
     $this->_childs = $childs;
     return $this;
