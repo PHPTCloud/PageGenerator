@@ -94,7 +94,7 @@ class NavigationItem extends BaseModel
    * @param NavigationItems $childs
    * @return this
    */
-  public function setChilds(?NavigationItem $childs): NavigationItem
+  public function setChilds(?NavigationItems $childs): NavigationItems
   {
     $this->_childs = $childs;
     return $this;
