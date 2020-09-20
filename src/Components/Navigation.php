@@ -27,9 +27,4 @@ class Navigation
   {
     return $this->_items;
   }
-
-  public function setItems($items)
-  {
-    $this->_items = $items;
-  }
 }
