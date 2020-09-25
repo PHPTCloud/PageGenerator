@@ -10,5 +10,5 @@ class NavigationItems extends BaseCollection
   /**
    * @var string
    */
-  protected $_MODEL = 'NavigationItem';
+  protected $_MODEL = NavigationItem::class;
 }

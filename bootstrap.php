@@ -21,14 +21,35 @@ require_once __DIR__ . '/src/Collections/BaseCollections/BaseCollection.php';
 require_once __DIR__ . '/src/Collections/NavigationItems.php';
 
 /**
+ * @fields
+ */
+require_once __DIR__ . '/src/Models/Fields/BaseField.php';
+require_once __DIR__ . '/src/Models/Fields/CheckboxField.php';
+
+require_once __DIR__ . '/src/Models/Fields/SelectField/Models/OptionModel.php';
+require_once __DIR__ . '/src/Models/Fields/SelectField/Collections/OptionsCollection.php';
+require_once __DIR__ . '/src/Models/Fields/SelectField.php';
+
+require_once __DIR__ . '/src/Models/Fields/RadioField/Models/RadioItemModel.php';
+require_once __DIR__ . '/src/Models/Fields/RadioField/Collections/RadioItemsCollection.php';
+require_once __DIR__ . '/src/Models/Fields/RadioField.php';
+
+require_once __DIR__ . '/src/Models/Fields/TextareaField.php';
+require_once __DIR__ . '/src/Models/Fields/TextField.php';
+
+require_once __DIR__ . '/src/Models/Fields/ButtonField.php';
+
+/**
  * @components
  */
 require_once __DIR__ . '/src/Components/Navigation.php';
+require_once __DIR__ . '/src/Components/Form.php';
 
 /**
  * @factories
  */
 require_once __DIR__ . '/src/Factories/ModelsFactory.php';
+require_once __DIR__ . '/src/Factories/FieldsModelsFactory.php';
 
 /**
  * @helpers

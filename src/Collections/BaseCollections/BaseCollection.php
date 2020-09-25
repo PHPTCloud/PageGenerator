@@ -16,7 +16,7 @@ class BaseCollection
   /**
    * @var string
    */
-  protected $_MODEL = 'BaseModel';
+  protected $_MODEL = BaseModel::class;
 
   public function __construct(?array $items = [])
   {
@@ -121,7 +121,7 @@ class BaseCollection
     foreach($array as $model)
     {
       $this->add(
-        (ModelsFactory::make($this->_MODEL))->fromArray($model)
+        (new $this->_MODEL())->fromArray($model)
       );
     }
 
