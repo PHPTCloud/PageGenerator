@@ -12,6 +12,7 @@ require_once __DIR__ . '/src/Exceptions/NotInitializedException.php';
  */
 require_once __DIR__ . '/src/Models/BaseModels/BaseModel.php';
 require_once __DIR__ . '/src/Models/NavigationItem.php';
+require_once __DIR__ . '/src/Models/PaginationItem.php';
 require_once __DIR__ . '/src/Models/Icon.php';
 
 /**
@@ -19,6 +20,7 @@ require_once __DIR__ . '/src/Models/Icon.php';
  */
 require_once __DIR__ . '/src/Collections/BaseCollections/BaseCollection.php';
 require_once __DIR__ . '/src/Collections/NavigationItems.php';
+require_once __DIR__ . '/src/Collections/PaginationItems.php';
 
 /**
  * @fields
