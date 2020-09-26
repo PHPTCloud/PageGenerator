@@ -26,6 +26,11 @@ class BaseField extends BaseModel
   protected $_placeholder;
 
   /**
+   * @var string
+   */
+  protected $_type;
+
+  /**
    * @var mixed
    */
   protected $_value;
@@ -85,11 +90,29 @@ class BaseField extends BaseModel
   }
 
   /**
+   * @return string
+   */
+  public function getType()
+  {
+    return $this->type;
+  }
+
+  /**
+   * @param string $type
+   * @return this
+   */
+  public function setType(?string $type): self
+  {
+    $this->_type = $type;
+    return $this;
+  }
+
+  /**
    * @return mixed
    */
   public function getValue()
   {
-    return $this->value;
+    return $this->_value;
   }
 
   /**

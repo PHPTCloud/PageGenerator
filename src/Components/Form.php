@@ -40,6 +40,60 @@ class Form
   protected $_fields;
 
   /**
+   * @return string
+   */
+  public function getName(): string
+  {
+    return $this->_name;
+  }
+
+  /**
+   * @param string $name
+   * @return Form
+   */
+  public function setName(?string $name): Form
+  {
+    $this->_name = $name;
+    return $this;
+  }
+
+  /**
+   * @return string
+   */
+  public function getAction()
+  {
+    return $this->_action;
+  }
+
+  /**
+   * @param string $action
+   * @return Form
+   */
+  public function setAction(?string $action): Form
+  {
+    $this->_action = $action;
+    return $this;
+  }
+
+  /**
+   * @return string
+   */
+  public function getMethod()
+  {
+    return $this->_method;
+  }
+
+  /**
+   * @param string $method
+   * @return Form
+   */
+  public function setMethod(?string $method): Form
+  {
+    $this->_method = $method;
+    return $this;
+  }
+
+  /**
    * @param string $name
    * @param string $action
    * @param string $method
