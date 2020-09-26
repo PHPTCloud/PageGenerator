@@ -46,6 +46,7 @@ require_once __DIR__ . '/src/Models/Fields/ButtonField.php';
  */
 require_once __DIR__ . '/src/Components/Navigation.php';
 require_once __DIR__ . '/src/Components/Form.php';
+require_once __DIR__ . '/src/Components/Pagination.php';
 
 /**
  * @factories
