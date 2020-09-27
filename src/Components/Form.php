@@ -10,6 +10,7 @@
 namespace uzone\Components;
 
 use uzone\Models\Fields\ButtonField;
+use uzone\Models\Fields\CheckboxField;
 use uzone\Models\Fields\RadioField;
 use uzone\Models\Fields\RadioField\Collections\RadioItemsCollection;
 use uzone\Models\Fields\SelectField;
@@ -108,46 +109,47 @@ class Form
   }
 
   /**
-   * @param string $name
-   * @param string $title
-   * @param string $placeholder
+   * @param array $attributes
    */
-  public function text(?string $name, ?string $title, ?string $placeholder = '')
+  public function text(?array $attributes = [])
   {
-    $textField = new TextField($name, $title, $placeholder);
+    $textField = new TextField();
+    $textField->fromArray($attributes);
+
     array_push($this->_fields, $textField);
   }
 
   /**
-   * @param string $name
-   * @param string $title
-   * @param string $placeholder
+   * @param array $attributes
    */
-  public function textarea(?string $name, ?string $title, ?string $placeholder = '')
+  public function textarea(?array $attributes = [])
   {
-    $textareaField = new TextareaField($name, $title, $placeholder);
+    $textareaField = new TextareaField();
+    $textareaField->fromArray($attributes);
+
     array_push($this->_fields, $textareaField);
   }
 
   /**
-   * @param string $name
-   * @param string $title
+   * @param array $attributes
    */
-  public function checkbox(?string $name, ?string $title)
+  public function checkbox(?array $attributes = [])
   {
-    $checkboxField = new TextField($name, $title);
+    $checkboxField = new CheckboxField();
+    $checkboxField->fromArray($attributes);
+
     array_push($this->_fields, $checkboxField);
   }
 
   /**
-   * @param string $name
-   * @param string $title
-   * @param string $placeholder
+   * @param array $attributes
    * @param array $options
    */
-  public function select(?string $name, ?string $title, $placeholder = '', $options = [])
+  public function select(?array $attributes = [], $options = [])
   {
-    $selectField = new SelectField($name, $title, $placeholder);
+    $selectField = new SelectField();
+    $selectField->fromArray($attributes);
+
     $options = (new OptionsCollection())->fromArray($options);
     $selectField->setItems($options);
 
@@ -155,23 +157,25 @@ class Form
   }
 
   /**
-   * @param string $name
-   * @param string $title
-   * @param string $placeholder
+   * @param array $attributes
    * @param array $items
    */
-  public function radio(?string $name, ?string $title, $items = [])
+  public function radio(?array $attributes = [], $items = [])
   {
-    $radioField = new RadioField($name, $title);
+    $radioField = new RadioField();
+    $radioField->fromArray($attributes);
+
     $items = (new RadioItemsCollection())->fromArray($items);
     $radioField->setItems($items);
 
     array_push($this->_fields, $radioField);
   }
 
-  public function submit(?string $name, ?string $title)
+  public function submit(?array $attributes = [])
   {
-    $buttonField = new ButtonField($name, $title);
+    $buttonField = new ButtonField();
+    $buttonField->fromArray($attributes);
+
     array_push($this->_fields, $buttonField);
   }
 

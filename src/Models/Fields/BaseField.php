@@ -125,11 +125,11 @@ class BaseField extends BaseModel
     return $this;
   }
 
-  public function __construct(?string $name, ?string $title, ?string $placeholder = '')
+  public function __construct()
   {
-    $this->setName($name);
-    $this->setTitle($title);
-    $this->setPlaceholder($placeholder);
+    /**
+     * ...
+     */
   }
 
 }
