@@ -2,15 +2,14 @@
 /**
  * @class Form
  * @package uzone\Components
- * 
- * @TODO
- * - make Fields Groups functional, for grouping fields in rows
  */
 
 namespace uzone\Components;
 
 use uzone\Models\Fields\ButtonField;
 use uzone\Models\Fields\CheckboxField;
+use uzone\Models\Fields\DateField;
+use uzone\Models\Fields\DateTimeField;
 use uzone\Models\Fields\RadioField;
 use uzone\Models\Fields\RadioField\Collections\RadioItemsCollection;
 use uzone\Models\Fields\SelectField;
@@ -169,6 +168,28 @@ class Form
     $radioField->setItems($items);
 
     array_push($this->_fields, $radioField);
+  }
+
+  /**
+   * @param array $attributes
+   */
+  public function date(?array $attributes = [])
+  {
+    $dateField = new DateField();
+    $dateField->fromArray($attributes);
+
+    array_push($this->_fields, $dateField);
+  }
+
+  /**
+   * @param array $attributes
+   */
+  public function datetime(?array $attributes = [])
+  {
+    $dateTimeField = new DateTimeField();
+    $dateTimeField->fromArray($attributes);
+
+    array_push($this->_fields, $dateTimeField);
   }
 
   public function submit(?array $attributes = [])

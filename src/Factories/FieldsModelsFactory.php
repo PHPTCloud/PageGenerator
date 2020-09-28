@@ -4,7 +4,11 @@ namespace uzone\Factories;
 
 use uzone\Exceptions\NotFoundModelException;
 use uzone\Models\Fields\BaseField;
+use uzone\Models\Fields\ButtonField;
 use uzone\Models\Fields\CheckboxField;
+use uzone\Models\Fields\DateField;
+use uzone\Models\Fields\DateTimeField;
+use uzone\Models\Fields\RadioField;
 use uzone\Models\Fields\SelectField;
 use uzone\Models\Fields\TextareaField;
 use uzone\Models\Fields\TextField;
@@ -36,6 +40,22 @@ class FieldsModelsFactory
 
       case 'SelectField':
         return new SelectField();
+        break;
+
+      case 'RadioField':
+        return new RadioField();
+        break;
+
+      case 'DateField':
+        return new DateField();
+        break;
+
+      case 'DateTimeField':
+        return new DateTimeField();
+        break;
+
+      case 'ButtonField':
+        return new ButtonField();
         break;
         
       default:

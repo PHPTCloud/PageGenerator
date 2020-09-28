@@ -7,6 +7,7 @@
 namespace uzone\Models\Fields;
 
 use uzone\Models\BaseModels\BaseModel;
+use uzone\Models\Icon;
 
 class BaseField extends BaseModel
 {
@@ -29,6 +30,21 @@ class BaseField extends BaseModel
    * @var string
    */
   protected $_type;
+
+  /**
+   * @var string
+   */
+  protected $_view;
+
+  /**
+   * @var bool
+   */
+  protected $_withIcon;
+
+  /**
+   * @var Icon
+   */
+  protected $_icon;
 
   /**
    * @var mixed
@@ -108,6 +124,60 @@ class BaseField extends BaseModel
   }
 
   /**
+   * @return string
+   */
+  public function getView()
+  {
+    return $this->_view;
+  }
+
+  /**
+   * @param string $view
+   * @return this
+   */
+  public function setView(?string $view): self
+  {
+    $this->_view = $view;
+    return $this;
+  }
+
+  /**
+   * @return bool
+   */
+  public function getWithIcon()
+  {
+    return $this->_withIcon;
+  }
+
+  /**
+   * @param bool @withIcon
+   * @return this
+   */
+  public function setWithIcon(?bool $withIcon = false): self
+  {
+    $this->_withIcon = $withIcon;
+    return $this;
+  }
+
+  /**
+   * @return Icon
+   */
+  public function getIcon(): Icon
+  {
+    return $this->_icon;
+  }
+
+  /**
+   * @param Icon $icon
+   * @return this
+   */
+  public function setIcon(?Icon $icon): self
+  {
+    $this->_icon = $icon;
+    return $this;
+  }
+
+  /**
    * @return mixed
    */
   public function getValue()
@@ -132,6 +202,9 @@ class BaseField extends BaseModel
     $this->_title = '';
     $this->_name = '';
     $this->_value = '';
+    $this->_view = '';
+    $this->_withIcon = false;
+    $this->_icon = null;
   }
 
 }

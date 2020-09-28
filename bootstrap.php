@@ -21,6 +21,7 @@ require_once __DIR__ . '/src/Models/Icon.php';
 require_once __DIR__ . '/src/Collections/BaseCollections/BaseCollection.php';
 require_once __DIR__ . '/src/Collections/NavigationItems.php';
 require_once __DIR__ . '/src/Collections/PaginationItems.php';
+require_once __DIR__ . '/src/Collections/IconsCollection.php';
 
 /**
  * @fields
@@ -40,6 +41,9 @@ require_once __DIR__ . '/src/Models/Fields/TextareaField.php';
 require_once __DIR__ . '/src/Models/Fields/TextField.php';
 
 require_once __DIR__ . '/src/Models/Fields/ButtonField.php';
+
+require_once __DIR__ . '/src/Models/Fields/DateField.php';
+require_once __DIR__ . '/src/Models/Fields/DateTimeField.php';
 
 /**
  * @components
