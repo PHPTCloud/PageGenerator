@@ -127,9 +127,11 @@ class BaseField extends BaseModel
 
   public function __construct()
   {
-    /**
-     * ...
-     */
+    $this->_type = '';
+    $this->_placeholder = '';
+    $this->_title = '';
+    $this->_name = '';
+    $this->_value = '';
   }
 
 }
