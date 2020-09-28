@@ -1,10 +1,10 @@
 <?php
 
-namespace uzone\Models;
+namespace PageGenerator\Models;
 
-use uzone\Models\BaseModels\BaseModel;
-use uzone\Models\Icon;
-use uzone\Collections\NavigationItems;
+use PageGenerator\Models\BaseModels\BaseModel;
+use PageGenerator\Models\Icon;
+use PageGenerator\Collections\NavigationItems;
 
 
 class NavigationItem extends BaseModel

@@ -1,21 +1,21 @@
 <?php
 /**
  * @class Form
- * @package uzone\Components
+ * @package PageGenerator\Components
  */
 
-namespace uzone\Components;
+namespace PageGenerator\Components;
 
-use uzone\Models\Fields\ButtonField;
-use uzone\Models\Fields\CheckboxField;
-use uzone\Models\Fields\DateField;
-use uzone\Models\Fields\DateTimeField;
-use uzone\Models\Fields\RadioField;
-use uzone\Models\Fields\RadioField\Collections\RadioItemsCollection;
-use uzone\Models\Fields\SelectField;
-use uzone\Models\Fields\SelectField\Collections\OptionsCollection;
-use uzone\Models\Fields\TextareaField;
-use uzone\Models\Fields\TextField;
+use PageGenerator\Models\Fields\ButtonField;
+use PageGenerator\Models\Fields\CheckboxField;
+use PageGenerator\Models\Fields\DateField;
+use PageGenerator\Models\Fields\DateTimeField;
+use PageGenerator\Models\Fields\RadioField;
+use PageGenerator\Models\Fields\RadioField\Collections\RadioItemsCollection;
+use PageGenerator\Models\Fields\SelectField;
+use PageGenerator\Models\Fields\SelectField\Collections\OptionsCollection;
+use PageGenerator\Models\Fields\TextareaField;
+use PageGenerator\Models\Fields\TextField;
 
 class Form
 {

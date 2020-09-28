@@ -3,7 +3,7 @@
 /**
  * @exceptions
  */
-require_once __DIR__ . '/src/Exceptions/UzoneException.php';
+require_once __DIR__ . '/src/Exceptions/PageGeneratorException.php';
 require_once __DIR__ . '/src/Exceptions/NotFoundModelException.php';
 require_once __DIR__ . '/src/Exceptions/NotInitializedException.php';
 

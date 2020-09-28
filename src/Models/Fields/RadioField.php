@@ -1,13 +1,13 @@
 <?php
 /**
  * @class RadioField
- * @package uzone\Models\Fields
+ * @package PageGenerator\Models\Fields
  */
 
-namespace uzone\Models\Fields;
+namespace PageGenerator\Models\Fields;
 
-use uzone\Models\Fields\BaseField;
-use uzone\Models\Fields\RadioField\Collections\RadioItemsCollection;
+use PageGenerator\Models\Fields\BaseField;
+use PageGenerator\Models\Fields\RadioField\Collections\RadioItemsCollection;
 
 class RadioField extends BaseField
 {

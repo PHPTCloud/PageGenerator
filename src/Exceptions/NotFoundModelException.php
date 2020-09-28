@@ -1,10 +1,10 @@
 <?php
 
-namespace uzone\Exceptions;
+namespace PageGenerator\Exceptions;
 
-use uzone\Exceptions\UzoneException;
+use PageGenerator\Exceptions\PageGeneratorException;
 
-class NotFoundModelException extends UzoneException
+class NotFoundModelException extends PageGeneratorException
 {
   /**
    * ...

@@ -1,13 +1,13 @@
 <?php
 /**
  * @class BaseField
- * @package uzone\Models\Fields
+ * @package PageGenerator\Models\Fields
  */
 
-namespace uzone\Models\Fields;
+namespace PageGenerator\Models\Fields;
 
-use uzone\Models\BaseModels\BaseModel;
-use uzone\Models\Icon;
+use PageGenerator\Models\BaseModels\BaseModel;
+use PageGenerator\Models\Icon;
 
 class BaseField extends BaseModel
 {

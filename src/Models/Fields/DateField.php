@@ -1,12 +1,12 @@
 <?php
 /**
  * @class DateField
- * @package uzone\Models\Fields
+ * @package PageGenerator\Models\Fields
  */
 
-namespace uzone\Models\Fields;
+namespace PageGenerator\Models\Fields;
 
-use uzone\Models\Fields\BaseField;
+use PageGenerator\Models\Fields\BaseField;
 
 class DateField extends BaseField
 {

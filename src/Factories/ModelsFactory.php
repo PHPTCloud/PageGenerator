@@ -1,11 +1,11 @@
 <?php
 
-namespace uzone\Factories;
+namespace PageGenerator\Factories;
 
-use uzone\Exceptions\NotFoundModelException;
-use uzone\Models\BaseModels\BaseModel;
-use uzone\Models\NavigationItem;
-use uzone\Models\Icon;
+use PageGenerator\Exceptions\NotFoundModelException;
+use PageGenerator\Models\BaseModels\BaseModel;
+use PageGenerator\Models\NavigationItem;
+use PageGenerator\Models\Icon;
 
 
 class ModelsFactory

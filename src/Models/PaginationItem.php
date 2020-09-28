@@ -1,12 +1,12 @@
 <?php
 /**
  * @class PaginationItem
- * @package uzone\Models
+ * @package PageGenerator\Models
  */
 
-namespace uzone\Models;
+namespace PageGenerator\Models;
 
-use uzone\Models\BaseModels\BaseModel;
+use PageGenerator\Models\BaseModels\BaseModel;
 
 class PaginationItem extends BaseModel
 {

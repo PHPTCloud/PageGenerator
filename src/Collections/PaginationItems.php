@@ -1,13 +1,13 @@
 <?php
 /**
  * @class PaginationItems
- * @package uzone\Collections
+ * @package PageGenerator\Collections
  */
 
-namespace uzone\Collections;
+namespace PageGenerator\Collections;
 
-use uzone\Collections\BaseCollections\BaseCollection;
-use uzone\Models\PaginationItem;
+use PageGenerator\Collections\BaseCollections\BaseCollection;
+use PageGenerator\Models\PaginationItem;
 
 class PaginationItems extends BaseCollection
 {

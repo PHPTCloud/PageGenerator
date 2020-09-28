@@ -1,6 +1,6 @@
 <?php
 
-namespace uzone\Client;
+namespace PageGenerator\Client;
 
 class PageGenerator
 {

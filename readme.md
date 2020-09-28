@@ -17,8 +17,8 @@ composer require phptcloud/pagegenerator
   
 #### Examples 
 ```php
-use uzone\Collections\IconsCollection;
-use uzone\Models\Icon;
+use PageGenerator\Collections\IconsCollection;
+use PageGenerator\Models\Icon;
 
 $homeIcon = new Icon('fas', 'fa-home');
 $icons = new IconsCollection();

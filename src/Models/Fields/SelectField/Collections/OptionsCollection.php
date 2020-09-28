@@ -1,13 +1,13 @@
 <?php
 /**
  * @class OptionsCollection
- * @package uzone\Models\Fields\SelectField\Collections
+ * @package PageGenerator\Models\Fields\SelectField\Collections
  */
 
-namespace uzone\Models\Fields\SelectField\Collections;
+namespace PageGenerator\Models\Fields\SelectField\Collections;
 
-use uzone\Collections\BaseCollections\BaseCollection;
-use uzone\Models\Fields\SelectField\Models\OptionModel;
+use PageGenerator\Collections\BaseCollections\BaseCollection;
+use PageGenerator\Models\Fields\SelectField\Models\OptionModel;
 
 class OptionsCollection extends BaseCollection
 {

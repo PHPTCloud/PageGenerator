@@ -1,17 +1,17 @@
 <?php
 
-namespace uzone\Factories;
+namespace PageGenerator\Factories;
 
-use uzone\Exceptions\NotFoundModelException;
-use uzone\Models\Fields\BaseField;
-use uzone\Models\Fields\ButtonField;
-use uzone\Models\Fields\CheckboxField;
-use uzone\Models\Fields\DateField;
-use uzone\Models\Fields\DateTimeField;
-use uzone\Models\Fields\RadioField;
-use uzone\Models\Fields\SelectField;
-use uzone\Models\Fields\TextareaField;
-use uzone\Models\Fields\TextField;
+use PageGenerator\Exceptions\NotFoundModelException;
+use PageGenerator\Models\Fields\BaseField;
+use PageGenerator\Models\Fields\ButtonField;
+use PageGenerator\Models\Fields\CheckboxField;
+use PageGenerator\Models\Fields\DateField;
+use PageGenerator\Models\Fields\DateTimeField;
+use PageGenerator\Models\Fields\RadioField;
+use PageGenerator\Models\Fields\SelectField;
+use PageGenerator\Models\Fields\TextareaField;
+use PageGenerator\Models\Fields\TextField;
 
 class FieldsModelsFactory
 {

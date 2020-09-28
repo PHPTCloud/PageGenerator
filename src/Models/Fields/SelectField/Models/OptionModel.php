@@ -1,12 +1,12 @@
 <?php
 /**
  * @class OptionModel
- * @package uzone\Models\Fields\SelectField\Models
+ * @package PageGenerator\Models\Fields\SelectField\Models
  */
 
-namespace uzone\Models\Fields\SelectField\Models;
+namespace PageGenerator\Models\Fields\SelectField\Models;
 
-use uzone\Models\BaseModels\BaseModel;
+use PageGenerator\Models\BaseModels\BaseModel;
 
 class OptionModel extends BaseModel
 {

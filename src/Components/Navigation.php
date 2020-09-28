@@ -1,8 +1,8 @@
 <?php
 
-namespace uzone\Components;
+namespace PageGenerator\Components;
 
-use uzone\Collections\NavigationItems;
+use PageGenerator\Collections\NavigationItems;
 
 class Navigation
 {

@@ -1,13 +1,13 @@
 <?php
 /**
  * @class IconsCollection
- * @package uzone\Collections
+ * @package PageGenerator\Collections
  */
 
-namespace uzone\Collections;
+namespace PageGenerator\Collections;
 
-use uzone\Collections\BaseCollections\BaseCollection;
-use uzone\Models\Icon;
+use PageGenerator\Collections\BaseCollections\BaseCollection;
+use PageGenerator\Models\Icon;
 
 class IconsCollection extends BaseCollection
 {

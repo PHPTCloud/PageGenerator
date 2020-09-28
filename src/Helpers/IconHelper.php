@@ -1,8 +1,8 @@
 <?php
 
-namespace uzone\Helpers;
+namespace PageGenerator\Helpers;
 
-use uzone\Models\Icon;
+use PageGenerator\Models\Icon;
 
 
 class IconHelper

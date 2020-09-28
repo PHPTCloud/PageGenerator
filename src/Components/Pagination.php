@@ -1,13 +1,13 @@
 <?php
 /**
  * @class Pagination
- * @package uzone\Components
+ * @package PageGenerator\Components
  */
 
-namespace uzone\Components;
+namespace PageGenerator\Components;
 
-use uzone\Collections\PaginationItems;
-use uzone\Models\PaginationItem;
+use PageGenerator\Collections\PaginationItems;
+use PageGenerator\Models\PaginationItem;
 
 class Pagination
 {

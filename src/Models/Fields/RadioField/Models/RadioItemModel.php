@@ -1,12 +1,12 @@
 <?php
 /**
  * @class RadioItemModel
- * @package uzone\Models\Fields\RadioField\Models
+ * @package PageGenerator\Models\Fields\RadioField\Models
  */
 
-namespace uzone\Models\Fields\RadioField\Models;
+namespace PageGenerator\Models\Fields\RadioField\Models;
 
-use uzone\Models\BaseModels\BaseModel;
+use PageGenerator\Models\BaseModels\BaseModel;
 
 class RadioItemModel extends BaseModel
 {

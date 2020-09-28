@@ -1,6 +1,6 @@
 <?php
 
-namespace uzone\Models\BaseModels;
+namespace PageGenerator\Models\BaseModels;
 
 class BaseModel
 {

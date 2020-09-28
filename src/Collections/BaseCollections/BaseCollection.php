@@ -1,9 +1,9 @@
 <?php
 
-namespace uzone\Collections\BaseCollections;
+namespace PageGenerator\Collections\BaseCollections;
 
-use uzone\Models\BaseModels\BaseModel;
-use uzone\Factories\ModelsFactory;
+use PageGenerator\Models\BaseModels\BaseModel;
+use PageGenerator\Factories\ModelsFactory;
 
 
 class BaseCollection

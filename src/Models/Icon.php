@@ -1,10 +1,10 @@
 <?php
 
-namespace uzone\Models;
+namespace PageGenerator\Models;
 
-use uzone\Models\BaseModels\BaseModel;
-use uzone\Helpers\IconHelper;
-use uzone\Exceptions\NotInitializedException;
+use PageGenerator\Models\BaseModels\BaseModel;
+use PageGenerator\Helpers\IconHelper;
+use PageGenerator\Exceptions\NotInitializedException;
 
 class Icon extends BaseModel
 {

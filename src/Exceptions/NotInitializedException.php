@@ -1,11 +1,11 @@
 <?php
 
-namespace uzone\Exceptions;
+namespace PageGenerator\Exceptions;
 
-use uzone\Exceptions\UzoneException;
+use PageGenerator\Exceptions\PageGeneratorException;
 
 
-class NotInitializedException extends UzoneException
+class NotInitializedException extends PageGeneratorException
 {
   /**
    * ...

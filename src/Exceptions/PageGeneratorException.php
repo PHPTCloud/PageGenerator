@@ -1,11 +1,11 @@
 <?php
 
-namespace uzone\Exceptions;
+namespace PageGenerator\Exceptions;
 
 use Exception;
 use Throwable;
 
-class UzoneException extends Exception
+class PageGeneratorException extends Exception
 {
   /**
    * @var int
@@ -28,7 +28,7 @@ class UzoneException extends Exception
   protected $lastRequestInfo = [];
 
   /**
-   * UzoneException constructor.
+   * PageGeneratorException constructor.
    * @param string $message
    * @param int $code
    * @param array $lastRequestInfo
@@ -61,9 +61,9 @@ class UzoneException extends Exception
 
   /**
    * @param int $errorCode
-   * @return UzoneException
+   * @return PageGeneratorException
    */
-  public function setErrorCode(int $errorCode): UzoneException
+  public function setErrorCode(int $errorCode): PageGeneratorException
   {
     $this->errorCode = $errorCode;
     return $this;
@@ -97,7 +97,7 @@ class UzoneException extends Exception
 
   /**
    * @param array $lastRequestInfo
-   * @return UzoneException
+   * @return PageGeneratorException
    */
   public function setLastRequestInfo(array $lastRequestInfo): self
   {
@@ -117,7 +117,7 @@ class UzoneException extends Exception
    * @param string $description
    * @return this
    */
-  public function setDescription(string $description): UzoneException
+  public function setDescription(string $description): PageGeneratorException
   {
     $this->description = $description;
     return $this;

@@ -1,9 +1,9 @@
 <?php
 
-namespace uzone\Collections;
+namespace PageGenerator\Collections;
 
-use uzone\Collections\BaseCollections\BaseCollection;
-use uzone\Models\NavigationItem;
+use PageGenerator\Collections\BaseCollections\BaseCollection;
+use PageGenerator\Models\NavigationItem;
 
 class NavigationItems extends BaseCollection
 {
