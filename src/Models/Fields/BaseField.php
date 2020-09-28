@@ -94,7 +94,7 @@ class BaseField extends BaseModel
    */
   public function getType()
   {
-    return $this->type;
+    return $this->_type;
   }
 
   /**
