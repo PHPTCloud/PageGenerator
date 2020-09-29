@@ -64,6 +64,12 @@ require_once __DIR__ . '/src/Factories/FieldsModelsFactory.php';
 require_once __DIR__ . '/src/Helpers/IconHelper.php';
 
 /**
+ * @fields
+ */
+require_once __DIR__ . '/src/Filters/BaseFilters/BaseFilter.php';
+require_once __DIR__ . '/src/Filters/FromToFilter.php';
+
+/**
  * @client
  */
 require_once __DIR__ . '/src/PageGenerator.php';
