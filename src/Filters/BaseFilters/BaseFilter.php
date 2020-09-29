@@ -53,11 +53,18 @@ class BaseFilter
 
     foreach($conditions as $column => $value) {
       if(!empty($value)) {
-        $filter[] = [$column, $this->_equalSign, $value];
+        $filter[] = [$column, $this->_equalSign, $this->valueAsLike($value)];
       }
     }
 
     return $filter;
+  }
+
+  public function valueAsLike($value)
+  {
+    return ($this->_equalSign === 'like')
+      ? $value . '%'
+      : $value;
   }
 
   /**

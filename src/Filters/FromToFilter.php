@@ -35,7 +35,7 @@ class FromToFilter extends BaseFilter
       }
 
       if(!empty($value)) {
-        $filter[] = [$column, $this->_equalSign, $value];
+        $filter[] = [$column, $this->_equalSign, $this->valueAsLike($value)];
       }
     }
 
