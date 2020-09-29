@@ -21,6 +21,11 @@ class BaseFilter
   protected $_filter;
 
   /**
+   * @var bool
+   */
+  protected $_equalSign;
+
+  /**
    * @return array
    */
   public function getFilter(): array
@@ -34,6 +39,7 @@ class BaseFilter
   public function __construct(?array $conditions = [])
   {
     $this->_conditions = $conditions;
+    $this->useLike();
     $this->_filter = $this->make($conditions);
   }
 
@@ -47,10 +53,18 @@ class BaseFilter
 
     foreach($conditions as $column => $value) {
       if(!empty($value)) {
-        $filter[] = [$column, '=', $value];
+        $filter[] = [$column, $this->_equalSign, $value];
       }
     }
 
     return $filter;
+  }
+
+  /**
+   * @param bool $useLike
+   */
+  public function useLike(?bool $useLike = false)
+  {
+    $this->_equalSign = ($useLike) ? 'like' : '=';
   }
 }
