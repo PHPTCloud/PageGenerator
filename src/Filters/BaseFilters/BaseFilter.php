@@ -62,9 +62,11 @@ class BaseFilter
 
   /**
    * @param bool $useLike
+   * @return this
    */
-  public function useLike(?bool $useLike = false)
+  public function useLike(?bool $useLike = false): self
   {
     $this->_equalSign = ($useLike) ? 'like' : '=';
+    return $this;
   }
 }

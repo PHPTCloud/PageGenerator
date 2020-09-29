@@ -58,5 +58,9 @@ $filter = new FromToFilter($filter);
 
 $users = new User();
 $users = $users->select('*')->where($filter->getFilter());
+/**
+ * To use 'like' compare
+ * $users = $users->select('*')->where($filter->useLike(true)->getFilter());
+ */
 ...
 ```
