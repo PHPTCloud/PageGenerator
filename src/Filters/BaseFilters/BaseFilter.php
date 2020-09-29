@@ -36,10 +36,10 @@ class BaseFilter
   /**
    * @param array $conditions
    */
-  public function __construct(?array $conditions = [])
+  public function __construct(?array $conditions = [], ?bool $useLike = false)
   {
     $this->_conditions = $conditions;
-    $this->useLike();
+    $this->useLike($useLike);
     $this->_filter = $this->make($conditions);
   }
 
@@ -64,7 +64,7 @@ class BaseFilter
    * @param bool $useLike
    * @return this
    */
-  public function useLike(?bool $useLike = false): self
+  public function useLike(?bool $useLike): self
   {
     $this->_equalSign = ($useLike) ? 'like' : '=';
     return $this;
