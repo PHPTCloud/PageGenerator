@@ -7,7 +7,7 @@
         }
     ],
     "require": {
-        "php": ">=7.x"
+        "php": "^7"
     },
     "autoload": {
         "classmap": ["src"]
